@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "asismed-clone"
+version = "0.1.0"
+description = "A clone backend app for the Asismed Website using microsevices in fastapi"
+authors = ["Agustin Arce <agustinarceprincich@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = {extras = ["all"], version = "^0.111.0"}
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.2"
+pytest-sugar = "^1.0.0"
+pytest-xdist = "^3.6.1"
+pytest-anyio = "^0.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
